@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity"
+    android:background="@color/gray">
+
+    <Button
+        android:id="@+id/btnConversationList"
+        android:layout_width="160dp"
+        android:layout_height="66dp"
+        android:text="会话列表页面"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnConversation"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/btnConversation"
+        android:layout_width="160dp"
+        android:layout_height="66dp"
+        android:text="会话页面"
+        app:layout_constraintStart_toEndOf="@+id/btnConversationList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/btnUserInfo"
+        android:layout_width="160dp"
+        android:layout_height="66dp"
+        android:text="用户信息"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnSendCustomMsg"
+        app:layout_constraintTop_toBottomOf="@+id/btnConversationList"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/btnSendCustomMsg"
+        android:layout_width="160dp"
+        android:layout_height="66dp"
+        android:text="发送自定义消息"
+        app:layout_constraintStart_toEndOf="@+id/btnUserInfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnConversation"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/btnUpdateMessageExpansion"
+        android:layout_width="160dp"
+        android:layout_height="66dp"
+        android:text="更新消息扩展信息"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnRemoveMessageExpansion"
+        app:layout_constraintTop_toBottomOf="@+id/btnUserInfo"
+        android:layout_marginTop="10dp"
+        />
+    <Button
+        android:id="@+id/btnRemoveMessageExpansion"
+        android:layout_width="160dp"
+        android:layout_height="66dp"
+        android:text="删除消息扩展信息"
+        app:layout_constraintStart_toEndOf="@+id/btnUpdateMessageExpansion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSendCustomMsg"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/btnGetGroupRemoteHistoryMessages"
+        android:layout_width="160dp"
+        android:layout_height="66dp"
+        android:text="拉取群聊远程历史消息"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnSendImage"
+        app:layout_constraintTop_toBottomOf="@+id/btnUpdateMessageExpansion"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/btnSendImage"
+        android:layout_width="160dp"
+        android:layout_height="66dp"
+        android:text="发送图片消息"
+        app:layout_constraintStart_toEndOf="@+id/btnGetGroupRemoteHistoryMessages"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRemoveMessageExpansion"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/btnJoinChatRoom1"
+        android:layout_width="160dp"
+        android:layout_height="66dp"
+        android:text="加入聊天室1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnSendImage"
+        app:layout_constraintTop_toBottomOf="@+id/btnSendImage"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/btnJoinChatRoom2"
+        android:layout_width="160dp"
+        android:layout_height="66dp"
+        android:text="加入聊天室2"
+        app:layout_constraintStart_toEndOf="@+id/btnGetGroupRemoteHistoryMessages"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSendImage"
+        android:layout_marginTop="10dp"
+        />
+    <Button
+        android:id="@+id/btnSendMsg2ChatRoom1"
+        android:layout_width="160dp"
+        android:layout_height="66dp"
+        android:text="向聊天室1发送文本消息"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnSendImage"
+        app:layout_constraintTop_toBottomOf="@+id/btnJoinChatRoom1"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/btnSendMsg2ChatRoom2"
+        android:layout_width="160dp"
+        android:layout_height="66dp"
+        android:text="向聊天室2发送文本消息"
+        app:layout_constraintStart_toEndOf="@+id/btnGetGroupRemoteHistoryMessages"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnJoinChatRoom2"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/btnGetHistoryMsgChatRoom1"
+        android:layout_width="160dp"
+        android:layout_height="66dp"
+        android:text="获取聊天室1历史消息"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnSendImage"
+        app:layout_constraintTop_toBottomOf="@+id/btnSendMsg2ChatRoom1"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/btnGetHistoryMsgChatRoom2"
+        android:layout_width="160dp"
+        android:layout_height="66dp"
+        android:text="获取聊天室2历史消息"
+        app:layout_constraintStart_toEndOf="@+id/btnGetGroupRemoteHistoryMessages"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSendMsg2ChatRoom2"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tvCustomMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGetHistoryMsgChatRoom1"
+        android:layout_marginTop="10dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">CTIMSimpleDemo</string>
+    <string name="my_plugin">我的自定义插件</string>
+</resources>
